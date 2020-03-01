@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/item_space"
+    android:layout_marginRight="@dimen/item_space"
+    android:layout_marginStart="@dimen/item_space"
+    android:layout_marginEnd="@dimen/item_space"
+    android:layout_marginTop="@dimen/item_top_space"
+    android:padding="@dimen/item_padding"
+    android:background="@color/colorItemBack"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:text="@string/place_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_item_by_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_by"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/attribute_space"
+        app:layout_constraintTop_toBottomOf="@id/txt_item_title"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_item_by"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_marginTop="@dimen/attribute_space"
+        android:layout_marginLeft="@dimen/attribute_space"
+        android:text="@string/place_by"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txt_item_by_label"
+        app:layout_constraintTop_toBottomOf="@id/txt_item_title"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_item_num_backers_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_num_backers"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/attribute_space"
+        app:layout_constraintTop_toBottomOf="@id/txt_item_by"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_item_num_backers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/place_num_backers"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toEndOf="@id/txt_item_num_backers_label"
+        android:layout_marginTop="@dimen/attribute_space"
+        android:layout_marginLeft="@dimen/attribute_space"
+        app:layout_constraintTop_toBottomOf="@id/txt_item_by"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

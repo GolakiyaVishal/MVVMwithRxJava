@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MVVM with RxJava</string>
+    <string name="label_main_activity">Appiness</string>
+    <string name="search_hear">Search hear</string>
+    <string name="place_title"><![CDATA[Catalysts, Explorers & Secret Keepers: Women of SF]]></string>
+    <string name="label_num_backers">No. Backers: </string>
+    <string name="place_num_backers">219382</string>
+    <string name="label_by">By: </string>
+    <string name="place_by">Museum of Science Fiction</string>
+    <string name="alert_no_internet">No internet connection</string>
+</resources>
